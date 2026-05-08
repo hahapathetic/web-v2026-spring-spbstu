@@ -1,0 +1,110 @@
+:root {
+  --g-step: 4px;
+
+  --font: "Rubik", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  --text-14: calc(var(--g-step) * 3.5);
+  --text-16: calc(var(--g-step) * 4);
+  --text-18: calc(var(--g-step) * 4.5);
+  --text-20: calc(var(--g-step) * 5);
+  --text-22: calc(var(--g-step) * 5.5);
+  --text-24: calc(var(--g-step) * 6);
+  --text-30: calc(var(--g-step) * 7.5);
+  --text-34: calc(var(--g-step) * 8.5);
+
+  --bg: #ffffff;
+  --page: #f4f7ff;
+  --text: #08060d;
+  --muted: #6b6375;
+  --border: #e5e4e7;
+  --card: #ffffff;
+
+  --color-surface-muted: #eef1f6;
+  --color-input: #e9edf3;
+  --color-tab-pill-bg: #f2f6ff;
+  --color-white: #ffffff;
+  --color-adv: #f5f5f5;
+
+  --blue: #115efb;
+  --blue-10: rgba(17, 94, 251, 0.1);
+  --pink: #ff60c3;
+  --pink-10: rgba(255, 46, 121, 0.1);
+  --green-badge: #00e398;
+  --star: #ffec41;
+
+  --text-55: rgba(8, 6, 13, 0.55);
+  --text-60: rgba(8, 6, 13, 0.6);
+  --text-70: rgba(8, 6, 13, 0.7);
+  --text-75: rgba(8, 6, 13, 0.75);
+  --text-85: rgba(8, 6, 13, 0.85);
+  --border-subtle: rgba(8, 6, 13, 0.06);
+  --border-soft: rgba(8, 6, 13, 0.08);
+  --border-panel: rgba(8, 6, 13, 0.05);
+  --divider-spec: rgba(8, 6, 13, 0.2);
+  --danger-text: rgba(255, 46, 121, 0.85);
+
+  --focus-ring-blue: rgba(17, 94, 251, 0.55);
+  --focus-shadow-blue: rgba(17, 94, 251, 0.12);
+  --error-border: rgba(255, 46, 121, 0.6);
+  --error-shadow: rgba(255, 46, 121, 0.12);
+  --color-error: #ff3b30;
+
+  --slider-rail: #d4dbe8;
+  --slider-fill: #18cc8c;
+  --slider-thumb: #1f63ea;
+  --slider-thumb-shadow: rgba(8, 6, 13, 0.25);
+
+  --checkbox-border-default: #c9d4eb;
+
+  --shadow-sm: 0 4px 16px rgba(8, 6, 13, 0.08);
+  --shadow-card-hover: 0 10px 26px rgba(8, 6, 13, 0.14);
+  --shadow-login-card: 0 10px 30px rgba(8, 6, 13, 0.12);
+
+  --footer-bg: #0d3b8a;
+  --footer-text: rgba(255, 255, 255, 0.9);
+  --footer-muted: rgba(255, 255, 255, 0.6);
+
+  --cart-page-bg: #eef1f6;
+  --cart-panel-shadow: 0 2px 24px rgba(8, 6, 13, 0.06);
+
+  --radius-4: calc(var(--g-step) * 1);
+  --radius-6: calc(var(--g-step) * 1.5);
+  --radius-8: calc(var(--g-step) * 2);
+  --radius-10: calc(var(--g-step) * 2.5);
+  --radius-12: calc(var(--g-step) * 3);
+  --radius-16: calc(var(--g-step) * 4);
+  --radius-pill: 999px;
+
+  --space-4: calc(var(--g-step) * 1);
+  --space-6: calc(var(--g-step) * 1.5);
+  --space-8: calc(var(--g-step) * 2);
+  --space-10: calc(var(--g-step) * 2.5);
+  --space-12: calc(var(--g-step) * 3);
+  --space-14: calc(var(--g-step) * 3.5);
+  --space-16: calc(var(--g-step) * 4);
+  --space-18: calc(var(--g-step) * 4.5);
+  --space-20: calc(var(--g-step) * 5);
+  --space-22: calc(var(--g-step) * 5.5);
+  --space-24: calc(var(--g-step) * 6);
+  --space-26: calc(var(--g-step) * 6.5);
+  --space-28: calc(var(--g-step) * 7);
+  --space-32: calc(var(--g-step) * 8);
+  --space-64: calc(var(--g-step) * 16);
+
+  --gap-catalog-tabs: calc(var(--g-step) * 4.5);
+  --gap-catalog-layout: calc(var(--g-step) * 5.5);
+  --gap-grid: calc(var(--g-step) * 5);
+
+  --container-width: calc(var(--g-step) * 320);
+  --catalog-sidebar-width: calc(var(--g-step) * 72.5);
+  --header-height: calc(var(--g-step) * 16);
+
+  --catalog-card-width: calc(var(--g-step) * 78);
+  --catalog-card-img-h: calc(var(--g-step) * 72);
+  --catalog-card-media-inset: calc(var(--g-step) * 3);
+  --catalog-card-img-inner-pad: calc(var(--g-step) * 3.5);
+  --catalog-card-img-radius: var(--radius-12);
+
+  --modal-product-media-height: calc(var(--g-step) * 80);
+
+  --ease-card: 0.2s ease;
+}

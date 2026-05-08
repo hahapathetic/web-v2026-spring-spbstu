@@ -1,0 +1,173 @@
+.pmGrid {
+  display: grid;
+  grid-template-columns: 340px 1fr;
+  gap: var(--space-28);
+    justify-content: center;
+    padding: var(--space-28) ;
+}
+
+.pmMedia {
+  position: relative;
+  height: var(--modal-product-media-height);
+  border-radius: var(--radius-16);
+  background: var(--color-surface-muted);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.pmBadges {
+  position: absolute;
+  top: var(--space-10);
+  right: var(--space-10);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: var(--space-6);
+  z-index: 1;
+}
+
+.pmBadgeNew {
+  font-size: var(--text-16);
+  padding: var(--space-4) var(--space-8);
+  border-radius: var(--radius-pill);
+  background: var(--green-badge);
+  color: var(--color-white);
+  font-weight: 600;
+}
+
+.pmBadgeHit {
+  font-size: var(--text-16);
+  padding: var(--space-4) var(--space-8);
+  border-radius: var(--radius-pill);
+  background: var(--pink);
+  color: var(--color-white);
+  font-weight: 600;
+}
+
+.pmMedia img {
+  max-width: 92%;
+  max-height: 92%;
+  object-fit: contain;
+}
+
+.pmTitle {
+  font-size: var(--text-22);
+  font-weight: 800;
+  margin: var(--space-6) 0 var(--space-6);
+}
+
+.pmRating {
+  display: flex;
+  gap: var(--space-6);
+  align-items: center;
+  font-size: var(--text-16);
+  color: var(--text-55);
+}
+
+.pmText {
+  margin-top: var(--space-10);
+  font-size: var(--text-16);
+  line-height: 1.45;
+  color: var(--text-55);
+}
+
+.pmSpecsTitle {
+  margin-top: var(--space-14);
+  font-size: var(--text-16);
+  font-weight: 700;
+}
+
+.pmSpecs {
+  margin-top: var(--space-8);
+  display: grid;
+  gap: var(--space-8);
+}
+
+.pmSpecRow {
+  display: flex;
+  align-items: center;
+  gap: var(--space-8);
+  font-size: var(--text-16);
+}
+
+.pmSpecKey {
+  color: var(--text-60);
+  white-space: nowrap;
+}
+
+.pmSpecLine {
+  flex: 1;
+  border-bottom: 1px solid var(--divider-spec);
+}
+.pmSpecVal {
+  color: var(--text-85);
+  text-align: right;
+  white-space: nowrap;
+}
+
+.pmBottom {
+  margin-top: var(--space-14);
+  display: grid;
+  gap: var(--space-10);
+  justify-items: end;
+}
+
+.pmPrice {
+  font-size: var(--text-22);
+  font-weight: 600;
+}
+
+.pmQty {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-10);
+}
+
+.pmQtyBtn {
+  width: 22px;
+  height: 22px;
+  border-radius: var(--radius-4);
+  border: 1px solid var(--border-soft);
+  background: var(--color-surface-muted);
+  color: var(--blue);
+  cursor: pointer;
+}
+
+.pmQtyNum {
+  font-size: var(--text-16);
+  color: var(--text-75);
+  width: 12px;
+  text-align: center;
+}
+
+.pmBtnBlue {
+  height: 34px;
+  padding: 0 var(--space-14);
+  border-radius: var(--radius-6);
+  border: 1px solid var(--blue);
+  background: var(--blue);
+  color: var(--color-white);
+  cursor: pointer;
+  font-weight: 600;
+    font-size: var(--text-16);
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-8);
+}
+
+.pmBtnPink {
+  height: 34px;
+  padding: 0 var(--space-14);
+  border-radius: var(--radius-6);
+  border: 1px solid var(--pink);
+  background: var(--pink);
+  color: var(--color-white);
+  cursor: pointer;
+  font-weight: 600;
+    font-size: var(--text-16);
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-8);
+}

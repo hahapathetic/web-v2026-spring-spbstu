@@ -1,0 +1,211 @@
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: var(--gap-grid);
+}
+
+.card {
+  border: none;
+  border-radius: var(--radius-16);
+  background: var(--card);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform var(--ease-card), box-shadow var(--ease-card);
+  width: 100%;
+  max-width: min(100%, var(--catalog-card-width));
+  margin-inline: auto;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: var(--shadow-card-hover);
+}
+
+.cardBody {
+  padding: var(--space-10) var(--space-16) var(--space-16);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
+  min-height: unset;
+  flex: 0 1 auto;
+}
+
+.imgWrap {
+  position: relative;
+  height: auto;
+  padding: var(--catalog-card-media-inset) var(--catalog-card-media-inset) 0;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+}
+
+.imgSquare {
+  width: 100%;
+  max-width: calc(var(--catalog-card-width) - 2 * var(--catalog-card-media-inset));
+  height: var(--catalog-card-img-h);
+  min-height: var(--catalog-card-img-h);
+  border-radius: var(--catalog-card-img-radius);
+  padding: var(--catalog-card-img-inner-pad);
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--color-surface-muted);
+  overflow: hidden;
+}
+
+.imgWrap img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  background: transparent;
+}
+
+.priceRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-10);
+}
+
+.price {
+  font-weight: 600;
+  font-size: var(--text-20);
+  line-height: 1.1;
+}
+
+.name {
+  font-weight: 400;
+  font-size: var(--text-18);
+  line-height: 1.35;
+  height: calc(1.35em * 2);
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--muted);
+  font-size: var(--text-16);
+  margin-top: auto;
+}
+
+.badges {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+  align-items: flex-end;
+  position: absolute;
+  top: calc(var(--catalog-card-media-inset) + var(--space-6));
+  right: calc(var(--catalog-card-media-inset) + var(--space-6));
+}
+
+.badgeNew {
+  font-size: var(--text-16);
+  padding: var(--space-4) var(--space-8);
+  width: max-content;
+  border-radius: var(--radius-pill);
+  background: var(--green-badge);
+  color: var(--color-white);
+  font-weight: 600;
+}
+.badgeHit {
+  font-size: var(--text-16);
+  padding: var(--space-4) var(--space-8);
+  width: max-content;
+  border-radius: var(--radius-pill);
+  background: var(--pink);
+  color: var(--color-white);
+  font-weight: 600;
+}
+
+.star {
+  color: var(--star);
+}
+
+.qty {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-8);
+}
+
+.qtyBtn {
+  width: var(--space-32);
+  height: var(--space-32);
+  border-radius: var(--radius-10);
+  border: 1px solid var(--border);
+  background: var(--bg);
+  cursor: pointer;
+}
+
+.addBtn {
+  width: 50%;
+  height: 34px;
+  padding: 0 var(--space-12);
+  border-radius: var(--radius-6);
+  border: 1px solid var(--blue);
+  background: var(--blue);
+  color: var(--color-white);
+  cursor: pointer;
+  font-weight: 600;
+  font-size: var(--text-14);
+}
+
+.btnContent {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-8);
+}
+
+.btnIcon {
+  display: block;
+  flex-shrink: 0;
+}
+
+.btnIconWhite {
+  filter: brightness(0) invert(1);
+}
+
+.cardActions {
+  margin-top: auto;
+  padding: 0 var(--space-14) var(--space-14);
+}
+
+.qtyInline {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.qtyRight {
+  display: inline-flex;
+  gap: var(--space-8);
+  align-items: center;
+}
+
+.qtyPink {
+  min-width: 50%;
+  height: 34px;
+  border-radius: var(--radius-6);
+  background: var(--pink);
+  color: var(--color-white);
+  font-size: var(--text-16);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
+
+.qtyPinkContent {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-8);
+  padding: 0 var(--space-10);
+}
